@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="./resources/SirDuke.mp3" type="audio/mpeg">
+    </audio>
+      
+    <button onclick="togglePlay()">Play/Pause</button>
+
+    <script>
+        var audio = document.getElementById("myAudio");
+
+        function togglePlay() {
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+        }
+    </script>
+</body>
+</html>
